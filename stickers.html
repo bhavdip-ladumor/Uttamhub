@@ -58,87 +58,128 @@
     </div>
 
     <div class="container">
-        <div class="product-grid">
-            
-            <div class="card">
-                <div class="product-img">  </div>
-                <div class="product-info">
-                    <h4>Vinyl Stickers</h4>
-                    <p>High-quality waterproof stickers in Matte or Glossy finish. Best for logos and laptop skins.</p>
-                    <a href="https://wa.me/919724362981?text=Hi%20Bhavdip,%20I%20want%20to%20order%20Vinyl%20Stickers" class="buy-btn">
-                        <i class="fab fa-whatsapp"></i> Order Vinyl
+    <div class="product-grid">
+        
+        <div class="card">
+            <div class="product-img"></div>
+            <div class="product-info">
+                <h4>Vinyl Stickers</h4>
+                <p>High-quality waterproof stickers. Best for logos and laptop skins.</p>
+                <div class="size-selector">
+                    <select class="size-select" id="vinylFinish">
+                        <option value="Matte Finish">Matte Finish</option>
+                        <option value="Glossy Finish">Glossy Finish</option>
+                    </select>
+                </div>
+                <div style="display: flex; gap: 8px; margin-top: 15px;">
+                    <a href="https://wa.me/919724362981?text=Hi%20Bhavdip,%20I%20want%20to%20order%20Vinyl%20Stickers" class="buy-btn" style="flex: 1.2; margin: 0; font-size: 0.8rem;">
+                        <i class="fab fa-whatsapp"></i> Order
                     </a>
+                    <button onclick="addWithVariant('Bhavdip Workshop', 'Vinyl Stickers', 'vinylFinish')" class="buy-btn" style="flex: 1; margin: 0; background: var(--primary); border: none; cursor: pointer; font-size: 0.8rem;">
+                        <i class="fas fa-cart-plus"></i> + Cart
+                    </button>
                 </div>
             </div>
-
-            <div class="card">
-                <div class="product-img">  </div>
-                <div class="product-info">
-                    <h4>Metallic Stickers</h4>
-                    <p>Premium Gold and Silver mirror-finish stickers for luxury branding and resin art.</p>
-                    <a href="https://wa.me/919724362981?text=Hi%20Bhavdip,%20I%20am%20interested%20in%20Metallic%20Gold/Silver%20Stickers" class="buy-btn">
-                        <i class="fab fa-whatsapp"></i> Order Metallic
-                    </a>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="product-img">  </div>
-                <div class="product-info">
-                    <h4>Transparent Stickers</h4>
-                    <p>Clear background stickers that blend perfectly onto glass, bottles, and resin pieces.</p>
-                    <a href="https://wa.me/919724362981?text=Hi%20Bhavdip,%20I%20want%20to%20order%20Transparent%20Stickers" class="buy-btn">
-                        <i class="fab fa-whatsapp"></i> Order Clear
-                    </a>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="product-img">  </div>
-                <div class="product-info">
-                    <h4>Intersheet Stickers</h4>
-                    <p>Specialized stickers for raw material use, resin pouring, and industrial labeling.</p>
-                    <a href="https://wa.me/919724362981?text=Hi%20Bhavdip,%20I%20need%20Intersheet%20Stickers" class="buy-btn">
-                        <i class="fab fa-whatsapp"></i> Order Intersheet
-                    </a>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="product-img">  </div>
-                <div class="product-info">
-                    <h4>Custom Name Stickers</h4>
-                    <p>Personalized name decals in various fonts for school kits, bottles, and personal items.</p>
-                    <a href="https://wa.me/919724362981?text=Hi%20Bhavdip,%20I%20want%20to%20order%20Custom%20Name%20Stickers" class="buy-btn">
-                        <i class="fab fa-whatsapp"></i> Customize Now
-                    </a>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="product-img">  </div>
-                <div class="product-info">
-                    <h4>Vehicle Radium & Cutouts</h4>
-                    <p>Precision cut radium stickers for bikes and cars. High visibility and weather resistant.</p>
-                    <a href="https://wa.me/919724362981?text=Hi%20Bhavdip,%20I%20need%20Radium%20Stickers%20for%20my%20vehicle" class="buy-btn">
-                        <i class="fab fa-whatsapp"></i> Get Quote
-                    </a>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="product-img">  </div>
-                <div class="product-info">
-                    <h4>Advertising Stickers</h4>
-                    <p>Large vinyl prints for shop displays, glass windows, and indoor/outdoor marketing.</p>
-                    <a href="https://wa.me/919724362981?text=Hi%20Bhavdip,%20I%20need%20Large%20Advertising%20Stickers" class="buy-btn">
-                        <i class="fab fa-whatsapp"></i> Business Inquiry
-                    </a>
-                </div>
-            </div>
-
         </div>
+
+        <div class="card">
+            <div class="product-img"></div>
+            <div class="product-info">
+                <h4>Metallic Stickers</h4>
+                <p>Premium Gold and Silver mirror-finish for luxury branding.</p>
+                <div style="display: flex; gap: 8px; margin-top: 15px;">
+                    <a href="https://wa.me/919724362981?text=Hi%20Bhavdip,%20I%20am%20interested%20in%20Metallic%20Gold/Silver%20Stickers" class="buy-btn" style="flex: 1.2; margin: 0; font-size: 0.8rem;">
+                        <i class="fab fa-whatsapp"></i> Order
+                    </a>
+                    <button onclick="addToCart('Bhavdip Workshop', 'Metallic Stickers')" class="buy-btn" style="flex: 1; margin: 0; background: var(--primary); border: none; cursor: pointer; font-size: 0.8rem;">
+                        <i class="fas fa-cart-plus"></i> + Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="product-img"></div>
+            <div class="product-info">
+                <h4>Transparent Stickers</h4>
+                <p>Clear background stickers that blend perfectly onto glass.</p>
+                <div style="display: flex; gap: 8px; margin-top: 15px;">
+                    <a href="https://wa.me/919724362981?text=Hi%20Bhavdip,%20I%20want%20to%20order%20Transparent%20Stickers" class="buy-btn" style="flex: 1.2; margin: 0; font-size: 0.8rem;">
+                        <i class="fab fa-whatsapp"></i> Order
+                    </a>
+                    <button onclick="addToCart('Bhavdip Workshop', 'Transparent Stickers')" class="buy-btn" style="flex: 1; margin: 0; background: var(--primary); border: none; cursor: pointer; font-size: 0.8rem;">
+                        <i class="fas fa-cart-plus"></i> + Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="product-img"></div>
+            <div class="product-info">
+                <h4>Intersheet Stickers</h4>
+                <p>Specialized stickers for raw material use and resin pouring.</p>
+                <div style="display: flex; gap: 8px; margin-top: 15px;">
+                    <a href="https://wa.me/919724362981?text=Hi%20Bhavdip,%20I%20need%20Intersheet%20Stickers" class="buy-btn" style="flex: 1.2; margin: 0; font-size: 0.8rem;">
+                        <i class="fab fa-whatsapp"></i> Order
+                    </a>
+                    <button onclick="addToCart('Bhavdip Workshop', 'Intersheet Stickers')" class="buy-btn" style="flex: 1; margin: 0; background: var(--primary); border: none; cursor: pointer; font-size: 0.8rem;">
+                        <i class="fas fa-cart-plus"></i> + Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="product-img"></div>
+            <div class="product-info">
+                <h4>Custom Name Stickers</h4>
+                <p>Personalized decals for school kits, bottles, and personal items.</p>
+                <div style="display: flex; gap: 8px; margin-top: 15px;">
+                    <a href="https://wa.me/919724362981?text=Hi%20Bhavdip,%20I%20want%20to%20order%20Custom%20Name%20Stickers" class="buy-btn" style="flex: 1.2; margin: 0; font-size: 0.8rem;">
+                        <i class="fab fa-whatsapp"></i> Custom
+                    </a>
+                    <button onclick="addToCart('Bhavdip Workshop', 'Custom Name Stickers')" class="buy-btn" style="flex: 1; margin: 0; background: var(--primary); border: none; cursor: pointer; font-size: 0.8rem;">
+                        <i class="fas fa-cart-plus"></i> + Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="product-img"></div>
+            <div class="product-info">
+                <h4>Vehicle Radium & Cutouts</h4>
+                <p>Precision cut radium stickers. Weather resistant.</p>
+                <div style="display: flex; gap: 8px; margin-top: 15px;">
+                    <a href="https://wa.me/919724362981?text=Hi%20Bhavdip,%20I%20need%20Radium%20Stickers" class="buy-btn" style="flex: 1.2; margin: 0; font-size: 0.8rem;">
+                        <i class="fab fa-whatsapp"></i> Quote
+                    </a>
+                    <button onclick="addToCart('Bhavdip Workshop', 'Vehicle Radium Sticker')" class="buy-btn" style="flex: 1; margin: 0; background: var(--primary); border: none; cursor: pointer; font-size: 0.8rem;">
+                        <i class="fas fa-cart-plus"></i> + Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="product-img"></div>
+            <div class="product-info">
+                <h4>Advertising Stickers</h4>
+                <p>Large vinyl prints for shop displays and marketing.</p>
+                <div style="display: flex; gap: 8px; margin-top: 15px;">
+                    <a href="https://wa.me/919724362981?text=Hi%20Bhavdip,%20I%20need%20Large%20Advertising%20Stickers" class="buy-btn" style="flex: 1.2; margin: 0; font-size: 0.8rem;">
+                        <i class="fab fa-whatsapp"></i> Inquiry
+                    </a>
+                    <button onclick="addToCart('Bhavdip Workshop', 'Advertising Vinyl')" class="buy-btn" style="flex: 1; margin: 0; background: var(--primary); border: none; cursor: pointer; font-size: 0.8rem;">
+                        <i class="fas fa-cart-plus"></i> + Cart
+                    </button>
+                </div>
+            </div>
+        </div>
+
     </div>
+</div>
     <footer>
         <p><strong>Bhavdip's Workshop</strong> | A Division of Uttam Hub</p>
         <p>WhatsApp: 9724362981</p>
@@ -151,6 +192,6 @@
             window.open(`https://wa.me/919724362981?text=${encodeURIComponent(msg)}`, '_blank');
         }
     </script>
-
+    <script src="cart.js"></script>
 </body>
 </html>
