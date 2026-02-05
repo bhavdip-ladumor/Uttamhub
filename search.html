@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Search Results | Uttam Hub</title>
+    <style>
+        body { font-family: sans-serif; padding: 50px; line-height: 1.6; }
+        .result-item { border-bottom: 1px solid #eee; padding: 15px 0; }
+        .result-item a { color: #0984e3; font-size: 1.2rem; text-decoration: none; font-weight: bold; }
+        .no-results { color: #d63031; font-weight: bold; }
+        .back-link { display: inline-block; margin-bottom: 20px; text-decoration: none; color: #636e72; }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="back-link">← Back to Home</a>
+    <h1>Search Results for: <span id="search-query" style="color: #0984e3;"></span></h1>
+    <div id="results-list"></div>
+
+    <script>
+        // 1. Data: This is where you list all your products/services across the whole site
+        const database = [
+            { title: "Resin Gifts", link: "resin.html", tags: "custom gift epoxy preservation raw material" },
+            { title: "MDF Cutting", link: "mdf.html", tags: "wood job work laser cnc furniture" },
+            { title: "Acrylic Signs", link: "acrylic.html", tags: "nameplates display transparent plexiglass" },
+            { title: "Plastic Molding", link: "plastic.html", tags: "factory industrial bulk manufacturing" }
+        ];
+
+        // 2. Logic to find the search word in the URL
+        const params = new URLSearchParams(window.location.search);
+        const query = params.get('query').toLowerCase();
+        document.getElementById('search-query').innerText = query;
+
+        const resultsContainer = document.getElementById('results-list');
+        const filteredResults = database.filter(item => 
+            item.title.toLowerCase().includes(query) || item.tags.toLowerCase().includes(query)
+        );
+
+        // 3. Display Results
+        if (filteredResults.length > 0) {
+            filteredResults.forEach(item => {
+                resultsContainer.innerHTML += `
+                    <div class="result-item">
+                        <a href="${item.link}">${item.title}</a>
+                        <p>View details about ${item.title} on our specialized page.</p>
+                    </div>`;
+            });
+        } else {
+            resultsContainer.innerHTML = "<p class='no-results'>No products found. Please try searching for 'Resin', 'MDF', or 'Plastic'.</p>";
+        }
+    </script>
+</body>
+</html>
