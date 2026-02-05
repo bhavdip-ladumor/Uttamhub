@@ -63,81 +63,90 @@
     </div>
 
     <div class="container">
-        <div class="product-grid">
-            <div class="product-card">
-                <div class="product-img">  </div>
-                <div class="product-info">
-                    <h4>Round Clock Bases</h4>
-                    <p>High-quality 12mm MDF base, perfectly sanded for resin or acrylic art.</p>
-                    <div class="size-selector">
-                        <label>Select Diameter:</label>
-                        <select class="size-select" id="clockSize">
-                            <option value="6 inch">6 Inch</option>
-                            <option value="8 inch">8 Inch</option>
-                            <option value="10 inch">10 Inch</option>
-                            <option value="12 inch">12 Inch</option>
-                            <option value="18 inch">18 Inch</option>
-                        </select>
-                    </div>
-                    <a href="javascript:void(0)" onclick="sendWhatsApp('Clock Base', 'clockSize')" class="buy-btn">
-                        <i class="fab fa-whatsapp"></i> Inquire Size
+    <div class="product-grid">
+        <div class="product-card">
+            <div class="product-img"></div>
+            <div class="product-info">
+                <h4>Round Clock Bases</h4>
+                <p>High-quality 12mm MDF base, perfectly sanded.</p>
+                <div class="size-selector">
+                    <label>Select Diameter:</label>
+                    <select class="size-select" id="clockSize">
+                        <option value="6 inch">6 Inch</option>
+                        <option value="8 inch">8 Inch</option>
+                        <option value="10 inch">10 Inch</option>
+                        <option value="12 inch">12 Inch</option>
+                        <option value="18 inch">18 Inch</option>
+                    </select>
+                </div>
+                <div style="display: flex; gap: 8px; margin-top: 15px;">
+                    <a href="javascript:void(0)" onclick="sendWhatsApp('Clock Base', 'clockSize')" class="buy-btn" style="flex: 1.2; margin: 0; font-size: 0.8rem;">
+                        <i class="fab fa-whatsapp"></i> Inquire
                     </a>
+                    <button onclick="addWithVariant('Wooden Beyond', 'Clock Base', 'clockSize')" class="buy-btn" style="flex: 1; margin: 0; background: var(--primary); border: none; cursor: pointer; font-size: 0.8rem;">
+                        <i class="fas fa-cart-plus"></i> + Cart
+                    </button>
                 </div>
             </div>
+        </div>
 
-            <div class="product-card">
-                <div class="product-img">  </div>
-                <div class="product-info">
-                    <h4>Pre-marked MDF Bases</h4>
-                    <p>Engraved designs like Mandalas, Lippan Art, and God figures for easy painting.</p>
-                    <div class="size-selector">
-                        <label>Select Size:</label>
-                        <select class="size-select" id="premarkedSize">
-                            <option value="8 inch">8 Inch</option>
-                            <option value="10 inch">10 Inch</option>
-                            <option value="12 inch">12 Inch</option>
-                        </select>
-                    </div>
-                    <a href="javascript:void(0)" onclick="sendWhatsApp('Pre-marked MDF Base', 'premarkedSize')" class="buy-btn">
-                        <i class="fab fa-whatsapp"></i> Order Design
+        <div class="product-card">
+            <div class="product-img"></div>
+            <div class="product-info">
+                <h4>Pre-marked MDF Bases</h4>
+                <p>Engraved designs like Mandalas and God figures.</p>
+                <div class="size-selector">
+                    <label>Select Size:</label>
+                    <select class="size-select" id="premarkedSize">
+                        <option value="8 inch">8 Inch</option>
+                        <option value="10 inch">10 Inch</option>
+                        <option value="12 inch">12 Inch</option>
+                    </select>
+                </div>
+                <div style="display: flex; gap: 8px; margin-top: 15px;">
+                    <a href="javascript:void(0)" onclick="sendWhatsApp('Pre-marked MDF Base', 'premarkedSize')" class="buy-btn" style="flex: 1.2; margin: 0; font-size: 0.8rem;">
+                        <i class="fab fa-whatsapp"></i> Order
                     </a>
+                    <button onclick="addWithVariant('Wooden Beyond', 'Pre-marked Base', 'premarkedSize')" class="buy-btn" style="flex: 1; margin: 0; background: var(--primary); border: none; cursor: pointer; font-size: 0.8rem;">
+                        <i class="fas fa-cart-plus"></i> + Cart
+                    </button>
                 </div>
             </div>
+        </div>
 
-            <div class="product-card">
-                <div class="product-img">  </div>
-                <div class="product-info">
-                    <h4>Customized Name Cutouts</h4>
-                    <p>Names or words cut in beautiful fonts for home decor and gifts.</p>
-                    <a href="https://wa.me/919724362981?text=Hi%20Wooden%20Beyond,%20I%20want%20to%20order%20a%20Custom%20Name%20Cutout" class="buy-btn">
-                        <i class="fab fa-whatsapp"></i> Customize Now
+        <div class="product-card">
+            <div class="product-img"></div>
+            <div class="product-info">
+                <h4>Customized Name Cutouts</h4>
+                <p>Names or words cut in beautiful fonts for decor.</p>
+                <div style="display: flex; gap: 8px; margin-top: 15px;">
+                    <a href="https://wa.me/919724362981?text=Hi%20Wooden%20Beyond,%20I%20want%20to%20order%20a%20Custom%20Name%20Cutout" class="buy-btn" style="flex: 1.2; margin: 0; font-size: 0.8rem;">
+                        <i class="fab fa-whatsapp"></i> Customize
                     </a>
+                    <button onclick="addToCart('Wooden Beyond', 'Custom Name Cutout')" class="buy-btn" style="flex: 1; margin: 0; background: var(--primary); border: none; cursor: pointer; font-size: 0.8rem;">
+                        <i class="fas fa-cart-plus"></i> + Cart
+                    </button>
                 </div>
             </div>
+        </div>
 
-            <div class="product-card" style="border: 2px dashed var(--accent);">
-                <div class="product-img">  </div>
-                <div class="product-info">
-                    <h4>Laser Cutting Service</h4>
-                    <p>Upload your DXF/PDF designs for high-precision laser cutting work.</p>
-                    <a href="https://wa.me/919724362981?text=Hi%20Wooden%20Beyond,%20I%20have%20a%20design%20for%20Laser%20Cutting.%20Can%20I%20get%20a%20quote?" class="buy-btn" style="background: var(--primary);">
-                        <i class="fas fa-cut"></i> Get a Quote
+        <div class="product-card" style="border: 2px dashed var(--accent);">
+            <div class="product-img"></div>
+            <div class="product-info">
+                <h4>Laser Cutting Service</h4>
+                <p>Upload your designs for high-precision laser work.</p>
+                <div style="display: flex; gap: 8px; margin-top: 15px;">
+                    <a href="https://wa.me/919724362981?text=Hi%20Wooden%20Beyond,%20I%20have%20a%20design%20for%20Laser%20Cutting" class="buy-btn" style="flex: 1.2; margin: 0; font-size: 0.8rem; background: var(--primary);">
+                        <i class="fas fa-cut"></i> Quote
                     </a>
-                </div>
-            </div>
-
-            <div class="product-card">
-                <div class="product-img">  </div>
-                <div class="product-info">
-                    <h4>Small Interior Items</h4>
-                    <p>MDF Key holders, organizers, and small decorative wall shelves.</p>
-                    <a href="https://wa.me/919724362981?text=Hi%20Wooden%20Beyond,%20show%20me%20your%20Interior%20Items%20catalog" class="buy-btn">
-                        <i class="fab fa-whatsapp"></i> View Catalog
-                    </a>
+                    <button onclick="addToCart('Wooden Beyond', 'Laser Cutting Job-work')" class="buy-btn" style="flex: 1; margin: 0; background: var(--accent); border: none; cursor: pointer; font-size: 0.8rem;">
+                        <i class="fas fa-cart-plus"></i> + Cart
+                    </button>
                 </div>
             </div>
         </div>
     </div>
+</div>
 
     <footer>
         <p><strong>Wooden Beyond</strong> | A Division of Uttam Hub</p>
@@ -152,7 +161,6 @@
             window.open(`https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`, '_blank');
         }
     </script>
-   <script src="cart.js"></script>
+    <script src="cart.js"></script>
 </body>
-
 </html>
