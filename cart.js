@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
             @keyframes cartShake {
                 0% { transform: scale(1); }
                 25% { transform: scale(1.2) rotate(15deg); }
-                50% { transform: scale(1.2) rotate(-15deg); }
+                50% { transform: scale(1.4) rotate(-15deg); }
                 75% { transform: scale(1.2) rotate(10deg); }
                 100% { transform: scale(1); }
             }
@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
             /* Pulse effect for the number bubble */
             @keyframes countPop {
                 0% { transform: scale(1); }
-                50% { transform: scale(1.4); }
+                50% { transform: scale(2.5); }
                 100% { transform: scale(1); }
             }
             .pop-animation { animation: countPop 0.4s ease-in-out; }
@@ -155,3 +155,4 @@ function addWithVariant(brand, productName, selectId) {
         addToCart(brand, `${productName} (${size})`);
     }
 }
+
